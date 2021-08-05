@@ -5,6 +5,7 @@ import ui.window       : createMainWindow;
 import ui.window       : MainWindow;
 import ui.text         : drawText;
 import ui.glerrors     : checkGlError;
+import ui.shaders      : loadShaders;
 
 
 MainWindow win;
@@ -14,6 +15,7 @@ void main()
 {
 	win = createMainWindow( 800, 600, "OpenGL" );
 	initGL();
+    loadShaders();
 	mainLoop();
 }
 
@@ -22,16 +24,12 @@ nothrow @nogc
 void initGL()
 {
     // Back color
-    //glClearColor( .4, .4, .4, 1 ); checkGlError( "glClearColor" );
+    glClearColor( .4, .4, .4, 1 ); checkGlError( "glClearColor" );
 
     // Texture blending
-    //glDisable( GL_DEPTH_TEST ); checkGlError( "glDisable" );
-    //glEnable( GL_BLEND ); checkGlError( "glEnable" );
-    //glBlendFunc( GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA ); checkGlError( "glBlendFunc" );
-
-    // Shaders
-    import ui.shaders;
-    loadShaders();
+    glDisable( GL_DEPTH_TEST ); checkGlError( "glDisable" );
+    glEnable( GL_BLEND ); checkGlError( "glEnable" );
+    glBlendFunc( GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA ); checkGlError( "glBlendFunc" );
 }
 
 
@@ -49,11 +47,7 @@ void draw()
 		"Hola!", 
 		10, 300, 
 		1.0f, 1.0f, 1.0f,
-		"arial",
-		16,
-		0,
-		0,
-		96 
+		"arial", 16
 	);
 }
 
