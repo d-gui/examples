@@ -21,7 +21,17 @@
 ![fonts-list.png](demo/fonts-list.png)
 
 ## line
+```D
+    import ui.line;
+
+    drawLine( 100, 300, 700, 300, 1.0f, 1.0f, 1.0f );
+```
 ![line-gl3.png](demo/line-gl3.png)
 
 ## window
+```D
+    import ui.window;
+
+    auto window = createMainWindow( 800, 600, "OpenGL" );
+```
 ![window-glfw.png](demo/window-glfw.png)
