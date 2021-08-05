@@ -20,7 +20,6 @@
 ```D
     import ui.fonts;
 
-
     auto fontFilePath = 
         queryFont( 
             /* family  */ "arial".toStringz,
