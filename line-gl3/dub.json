@@ -12,8 +12,8 @@
             "platforms"   : [ "linux" ],
 			"dependencies":
 			{
-                "line"   : "~main",
-                "window" : "~main",
+                "line"   : { "path" : "../../line" },
+                "window" : { "path" : "../../triangle" },
 			}
 		},
 	]

@@ -12,7 +12,7 @@
             "platforms"   : [ "linux" ],
 			"dependencies":
 			{
-                "window"  : "~main"
+                "window"  : "*"
 			},
 			"versions"    : [ "GLFW", "GL3" ],
 		},

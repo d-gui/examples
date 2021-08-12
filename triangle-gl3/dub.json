@@ -2,20 +2,19 @@
 	"authors"     : [ "Vitaliy Fadeev" ],
 	"copyright"   : "Copyright © 2021, Vitaliy Fadeev",
 	"description" : "A minimal D application.",
-	"license"     : "proprietary",
-	"name"        : "fonts-list",
+	"license"     : "GPL3",
+	"name"        : "triangle-gl3",
     "targetType"  : "executable",
     "configurations": 
     [
         {
-            "name"        : "linux-fontconfig",
+            "name"        : "linux-gl3",
             "platforms"   : [ "linux" ],
 			"dependencies":
 			{
-                "fonts"   : { "path" : "../../fonts" },
-			},
-			"versions"   : [ "FontConfig" ],
-			"buildOptions2" : [ "betterC" ]
+                "triangle" : { "path" : "../../triangle" },
+                "window"   : { "path" : "../../window" },
+			}
 		},
 	]
 }

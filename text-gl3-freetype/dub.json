@@ -12,8 +12,8 @@
             "platforms"   : [ "linux" ],
 			"dependencies":
 			{
-                "window" : "~main",
-                "text"   : "~main",
+                "window" : "*",
+                "text"   : "*",
 			}
 		},
 	]

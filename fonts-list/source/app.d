@@ -6,7 +6,7 @@ import std.string : toStringz;
 
 void main() 
 {
-	auto fontFilePath = 
+	auto rec = 
 		queryFont( 
 			/* family  */ "arial".toStringz,
 			/* style   */ 0, 
@@ -15,10 +15,10 @@ void main()
 			/* outline */ 0.0f
 		);
 
-	if ( fontFilePath )
+	if ( rec )
 	{
-		printf( "fontFilePath: %s\n", fontFilePath );
-		free( fontFilePath );
+		printf( "fontFilePath: %s\n", rec.fileName );
+		freeFontRecord( rec );
 	}
 	else
 	{
