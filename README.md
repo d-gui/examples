@@ -16,6 +16,14 @@
 ```
 ![line-gl3.png](demo/line-gl3.png)
 
+## triangle
+```D
+    import ui.triangle;
+
+    drawTriangle( 100, 300, 700, 300, 400, 0, 0.3f, 0.3f, 0.3f );
+```
+![triangle-gl3.png](demo/triangle-gl3.png)
+
 ## fonts
 ```D
     import ui.fonts;

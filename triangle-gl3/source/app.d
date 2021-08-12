@@ -45,7 +45,7 @@ void draw()
 	glViewport( 0, 0, width, height );
 
 	//
-	drawTriangle( 100, 300, 700, 300, 400, 0, 1.0f, 1.0f, 1.0f );
+	drawTriangle( 100, 300, 700, 300, 400, 0, 0.3f, 0.3f, 0.3f );
 }
 
 
